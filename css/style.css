@@ -1,0 +1,107 @@
+
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #3b3f45;
+	font-family: sans-serif;
+
+}
+
+header, .bon-appetit {
+	background-color: #4a4f56;
+	text-align: center;
+	margin: 0;
+	padding: 20px;
+}
+
+
+h1, h3 {
+	color: #eb7e78;
+	
+}
+
+h1 {
+	font-size: 24px;
+}
+
+h3 {
+	font-size: 14px;
+}
+
+
+.container, .main {
+	 margin: 25px auto;
+	 width: 600px;
+
+}
+
+
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	list-style: none;
+	margin: 0;
+}
+
+label {
+	display: inline-block;
+	width: 100%;
+	background-color: #88839e;
+	color: white;
+	border-top: 2px solid #88839e;
+  	border-bottom: 2px solid #88839e;
+  	padding: 7px;
+  	
+
+}
+
+li:nth-of-type(odd) label {
+	background-color: #7a7593;
+	border-bottom: 2px solid #7a7593;
+
+}
+
+small {
+	font-size: 9px;
+}
+
+label input:checked + span { 
+	text-decoration: line-through;
+	color: #A3A0b5;
+
+}
+
+li:hover {
+  background-color: #625e77; 
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+}
+
+/*если мы будем задавать сразу label и nth* то не сработает, так как в li только один потоммок*/
+
+
+label:active {
+	  background-color: #eb7e78; 
+
+}
+
+.bon-appetit {
+	width: 100%;
+	border: none;
+	cursor: pointer;
+}
+
+
+
+/*блочная модель. по умолчанию - контент-бокс, но есть пэддинг бокс и бордер бокс.
+/*контент бокс = контент + маржины и граница*/
+/*пэдинг = контент и пэддинги, а все остальное наружу*/
